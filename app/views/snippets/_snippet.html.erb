@@ -1,0 +1,9 @@
+<li>
+  <h3><%= link_to snippet.title, snippet_path(snippet) %></h3>
+
+<pre>
+<%= snippet.body %>
+</pre>
+
+  <p>Tags: <%= snippet.tag_list.collect {|t| link_to(t, tag_path(t)) }.join(', ') %>
+</li>

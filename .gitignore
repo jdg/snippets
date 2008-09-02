@@ -1,0 +1,27 @@
+# Rails directories
+log/[^.]*
+doc/[^.]*
+tmp/**/*
+db/*.sqlite3
+db/*.sql
+db/*.sql.gz
+public/cache/*
+public/cache/**/*
+public/stored_images/**/*
+public/javascripts/all.js
+public/stylesheets/all.css
+public/javascripts/cache/
+public/stylesheets/cache/
+
+# Local environment config files
+config/database.yml
+
+# Development-related files
+.DS_Store
+*.tmproj
+radar.txt
+*.swp
+console
+
+# Ignore emacs backup files
+*~

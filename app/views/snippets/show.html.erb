@@ -1,0 +1,7 @@
+<h2>Snippet</h2>
+
+<%= link_to 'New Snippet', new_snippet_path %> | <%= link_to 'Edit Snippet', edit_snippet_path(@snippet) %>
+
+<ul>
+  <%= render :partial => 'snippets/snippet', :locals => {:snippet => @snippet} %>
+</ul>

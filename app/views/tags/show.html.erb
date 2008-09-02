@@ -1,0 +1,5 @@
+<h2>Snippets tagged with: <%= @tag.name %></h2>
+
+<ul>
+  <%= render :partial => 'snippets/snippet', :collection => Snippet.find_tagged_with(@tag.name) %>
+</ul>

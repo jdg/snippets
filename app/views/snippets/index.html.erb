@@ -1,0 +1,7 @@
+<h2>All Snippets</h2>
+
+<%= link_to 'New Snippet', new_snippet_path %>
+
+<ul>
+  <%= render :partial => 'snippets/snippet', :collection => @snippets %>
+</ul>

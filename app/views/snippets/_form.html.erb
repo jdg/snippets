@@ -1,0 +1,9 @@
+<% form_for @snippet do |f| %>
+  Title: <%= f.text_field :title %>
+  <br />
+  Tags: <%= f.text_field :tag_list %>
+  <br />
+  Code: <%= f.text_area  :body %>
+
+  <%= submit_tag 'Save' %>
+<% end %>
